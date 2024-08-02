@@ -1,4 +1,84 @@
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family:cursive;
+    background-image: url('vecteezy_composition-of-shopping-day-concept-with-shopping-bags_31617003.jpg'); /*background image instead of solid color*/
+    background-size: cover;  /*make sure the background image cover the whole page*/
+    color: black;
+    font-weight: bold;
+    user-select: none;
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    max-width: 320px;       /*mobile devices will be able to show this */
+    margin: 30px auto;
+}
+img{                /*use gif instead of image*/
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+input {
+    color: #070605;  /*updated font colour*/
+    background-color: #DCE1EB;
+    border:none;
+    padding: 15px;
+    border-radius:20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+
+}
+
+button {
+    color: #fff9f9;
+    background-color: #a21806;  /*changed color*/
+    border:none;
+    padding: 15px;
+    border-radius:20px;
+    font-size: 20px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serifS;  /*changed font*/
+    transition: all 0.5s ease;
+
+}
+
+button:hover{
+    background-color: #432a12;
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    
+}
+
+ul li {
+    font-size: 20px;
+    background-color: rgb(227, 173, 152); /*changed the color*/
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+ul li:hover {
+    background-color:rgb(169, 169, 39);
+    cursor: pointer;
+    transform: scale(1.07); /* Slightly larger on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
